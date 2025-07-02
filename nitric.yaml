@@ -1,0 +1,20 @@
+name: test
+targets:
+  - file:aws.yaml
+description: "Testing a simple nitric service"
+services:
+  processor:
+    dev:
+      script: ./dev.sh   
+    container:
+      docker:
+        dockerfile: main.dockerfile
+        context: .
+entrypoints:
+  ingress:
+    routes:
+      /:
+        name: processor
+buckets:
+  image: {}
+    

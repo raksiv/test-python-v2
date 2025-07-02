@@ -1,0 +1,21 @@
+[project]
+name = "v2-testing-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "grpcio",
+  "grpcio-tools",
+  "veetwo_client >= 0.1.0"
+]
+
+[build-system]
+requires = [
+  "setuptools>=40.8.0",
+  "wheel",
+  "pip"
+]
+build-backend = "setuptools.build_meta"

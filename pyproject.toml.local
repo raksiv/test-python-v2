@@ -1,0 +1,13 @@
+[project]
+name = "v2-testing-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "grpcio",
+  "grpcio-tools",
+  "veetwo_client @ file:///Users/rs/Development/nitric/client/python/dist/veetwo_client-0.1.0.tar.gz"
+]
